@@ -1,0 +1,12 @@
+{
+    "name": "off_the_chain",
+    "version": "1.0.0",
+    "description": "Find local ethnic eats",
+    "main": "server.js",
+    "author": "CodeFay, AspenHollyer, Jason, bcfolsom",
+    "license": "MIT",
+    "dependencies": {
+        "yelp-fusion": "^1.0.3",
+        "express": "^4.15.2"
+    }
+}

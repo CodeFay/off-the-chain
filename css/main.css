@@ -1,0 +1,55 @@
+body {
+	overflow-x: hidden; /*Prevent sideways scroll on narrow screens*/
+	background-color: #930602;
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 18px;
+  color: #fafafa;
+}
+.search {
+	background-color: #3C1518;
+}
+form {
+  margin-top: 20px;
+}
+select, input {
+  color: #444;
+}
+select {
+  min-width: 300px;
+}
+h1, h2 {
+	font-family: 'Arima Madurai', serif;
+	font-size: 40px;
+	font-weight: bold;
+  color: #fafafa;
+}
+h2 {
+	text-transform: uppercase;
+}
+.gold {
+  color: #D58936;
+}
+
+/*Devicons size*/
+.technologies-list {
+	font-size: 35px;
+}
+
+/*Space between sections*/
+.row {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+/*Customize links*/
+a {
+	color: #D58936 !important;
+}
+a:hover {
+	color: #A76719 !important;
+	text-decoration: none;
+}
+#contacts li {
+	display: inline-block;
+	padding: 2px 10px;
+}
