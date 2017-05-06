@@ -29,6 +29,10 @@ h2 {
 .gold {
   color: #D58936;
 }
+.icon {
+	width: 100px !important;
+	height: 100px !important;
+}
 
 /*Devicons size*/
 .technologies-list {
