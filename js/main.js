@@ -8,7 +8,6 @@ $(document).ready(function() {
 		event.preventDefault();
 		$.ajax({
 			url: "http://192.168.47.82:8080/api/" + $("#choices").val(),
-
 			method: "GET",
 			success: function(data) {
 
