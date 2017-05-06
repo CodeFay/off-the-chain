@@ -4,12 +4,15 @@ $(document).ready(function() {
 		event.preventDefault();
 	});
 
+
+
 	$("#search").on('click', function(event) {
 		event.preventDefault();
 		$.ajax({
 			url: "http://192.168.47.82:8080/api/" + $("#choices").val(),
 			method: "GET",
 			success: function(data) {
+
 				console.log(data);
 				for(var i = 0; i < 5; i++) {
 					var restaurant = data[i];
@@ -24,6 +27,7 @@ $(document).ready(function() {
 
 					$(".restaurant").html(searchMsg + html);
 				}
+
 			}
 		});
 	});
