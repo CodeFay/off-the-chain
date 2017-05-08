@@ -26,6 +26,11 @@ h1, h2 {
 h2 {
 	text-transform: uppercase;
 }
+.names {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #D58936;
+}
 .gold {
   color: #D58936;
 }
@@ -56,4 +61,8 @@ a:hover {
 #contacts li {
 	display: inline-block;
 	padding: 2px 10px;
+}
+.trademark {
+	height: 8%;
+	width: 8%;
 }

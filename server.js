@@ -4,14 +4,16 @@ const yelp = require('yelp-fusion');
 var express = require('express');
 var app = express();
 var path = require('path');
-const client = yelp.client("eUu_AJS2XenKGZZrXmgcCfeTZQ7WlepE0eLEXW7Lialmyyv9T-WTey6pVNyyB2eEJ2Q0d8zqaV2zKH3rY5u6N2EZwb3riiGBNcDBAWMoNZhBddCEB3Rq4Z8oHe8NWXYx")
+
+var token = process.env.TOKEN;
+const client = yelp.client(token);
 
 // serve static files
 app.use('/css', express.static('css'));
 app.use('/js', express.static('js'));
 app.use('/assets', express.static('assets'));
 
-// app.set('port', (process.env.PORT || 5000));
+app.set('port', (process.env.PORT || 5000));
 
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/index.html'));
@@ -39,7 +41,8 @@ app.get('/api/*', function(req, res, next) {
             }
 // so now we are going to try to sort it!
 biz.sort(function(a,b){return b.density - a.density});
-            res.send(JSON.stringify(newbiz, null, 4));
+            // res.send(JSON.stringify(biz, null, 4));
+            res.json(biz, null, 4);
         }).catch(e => { // this catches erroes
             console.log(e);
         });
@@ -63,10 +66,10 @@ function densityCalc(termIn, latIn, longIn) {
 // app.listen(8080, function() {
 //   console.log('Node app is running on port', app.get('port'));
 // });
-const port = 8080;
-app.listen(port, "0.0.0.0");
-console.log('The magic happens on port ' + port);
+// const port = 8080;
+// app.listen(port, "0.0.0.0");
+// console.log('The magic happens on port ' + port);
 
-// app.listen(app.get('port'), function() {
-//   console.log('Node app is running on port', app.get('port'));
-// });
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
+});
