@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "Find local ethnic eats",
     "main": "server.js",
-    "author": "CodeFay, AspenHollyer, Jason, bcfolsom, Rhonda, jjspetz, HalcyonJuly7",
+    "author": "CodeFay, AspenHollyer, Josh, bcfolsom, Rhonda, jjspetz, HalcyonJuly7",
     "license": "MIT",
     "dependencies": {
         "yelp-fusion": "^1.0.3",
