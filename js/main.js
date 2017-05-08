@@ -8,7 +8,7 @@ $(document).ready(function() {
 
         event.preventDefault();
         $.ajax({
-            url: "http://10.1.40.77:8080/api/" + $("#choices").val(),
+            url: "http://off-the-chain.herokuapp.com/api/" + $("#choices").val(),
             method: "GET",
             success: function(data) {
                 $(".restaurant").html('');
