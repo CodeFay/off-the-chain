@@ -2,6 +2,7 @@
 Determine authentic eats in Houston area using Yelp API ... created during FreeCodeCamp Houston mini hackathon (May 6, 2017)
 
 [Off the Chain](http://off-the-chain.herokuapp.com/ "Off the Chain")
+![Screenshot](assets/Off-The-Chain-Screenshot.PNG)
 
 #### Future updates
   * Search by any cuisine (input field vs drop down)
